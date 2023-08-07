@@ -141,7 +141,9 @@ export default {
     }
   },
   fetchDelay: 1000,
-
+  mounted(){
+    this.getMovies()
+  },
   methods: {
     async getMovies() {
       const data = axios.get(
