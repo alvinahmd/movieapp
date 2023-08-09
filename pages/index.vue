@@ -51,12 +51,7 @@
                 })
               }}
             </p>
-            <NuxtLink
-              class="button button-light"
-              :to="{ name: 'movies-id', params: { movieid: movie.id } }"
-            >
-              Get More Info
-            </NuxtLink>
+            <nuxt-link class="button button-light" :to="`/movies/${movie.id}`"> get more info </nuxt-link>
           </div>
         </div>
       </div>
@@ -87,12 +82,13 @@
                 })
               }}
             </p>
-            <NuxtLink
+            <!-- <NuxtLink
               class="button button-light"
               :to="{ name: 'movies-movieid', params: { id: movie.id } }"
             >
               Get More Info
-            </NuxtLink>
+            </NuxtLink> -->
+            <nuxt-link class="button button-light" :to="`/movies/${movie.id}`"> get more info </nuxt-link>
           </div>
         </div>
       </div>

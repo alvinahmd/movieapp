@@ -4,7 +4,7 @@
         <div class="text-container">
             <div class="text">
                 <span class="mini-heading">
-                    Now Stremaing
+                    Now Streaming
                 </span>
                 <h1>
                     <span>Now</span>
