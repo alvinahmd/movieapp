@@ -1,8 +1,7 @@
 <template>
-    <!-- Loading -->
+  
     <Loading v-if="$fetchState.pending" />
   
-    <!-- Movie Info -->
     <div v-else class="single-movie container">
       <NuxtLink class="button" :to="{ name: 'index' }"> Back </NuxtLink>
       <div class="movie-info">
@@ -20,7 +19,7 @@
           <p class="movie-fact">
             <span>Released:</span>
             {{
-              new Date(movie.release_date).toLocaleString('en-us', {
+              new Date(movie?.release_date).toLocaleString('en-us', {
                 month: 'long',
                 day: 'numeric',
                 year: 'numeric',
@@ -33,7 +32,7 @@
           <p class="movie-fact">
             <span>Revenue:</span>
             {{
-              movie.revenue.toLocaleString('en-us', {
+              movie?.revenue?.toLocaleString('en-us', {
                 style: 'currency',
                 currency: 'USD',
               })
